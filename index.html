@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romaji Convert</title>
+
+    <style>
+        body, html {
+            height: 95%;
+            width: 95%;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        textarea {
+            overflow: hidden;
+            overflow-wrap: break-word;
+            resize: none;
+            height: 144px;
+            background: rgb(43, 43, 43) none repeat scroll 0% 0% !important;
+            width: 90%;
+            font-size: 2em;
+            height: 70%;
+        }
+        textarea, i, td {color: #ACE }
+    </style>
+    <script src="wanakana.min.js"></script>
+</head>
+
+<body>
+    <textarea id="ime" style="background: rgb(23, 23, 23) none repeat scroll 0% 0% !important;"></textarea>
+    
+    <script>
+        var input = document.getElementById('ime');
+        wanakana.bind(input);
+    </script>
+</body>
+
+</html>
